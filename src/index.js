@@ -1,5 +1,13 @@
-const global  = (function() {
 
+import './pages/index.css'
+import Api from '../src/js/Api';
+import Card from '../src/js/Card';
+import CardList from '../src/js/CardList';
+import FormValidator from '../src/js/FormValidator';
+import Popup from '../src/js/Popup';
+import UserInfo from '../src/js/UserInfo'
+
+//const global  = (function() {
 
   // Переменные
 
@@ -20,6 +28,7 @@ const profileLink = document.querySelector('#profile__link');
 const userInfoName = document.querySelector('.user-info__name');
 const profileName = document.querySelector('#profile__name');
 const popup = Array.from(document.querySelectorAll('.popup'));
+const API_URL = process.env.NODE_ENV === "production" ? "https://nomoreparties.co" : "http://nomoreparties.co";
 
 //Классы
 
@@ -36,7 +45,7 @@ popup.forEach((elem) => {
 
 //Подключение к API
 const api = new Api(
-  {baseUrl: 'http://praktikum.tk/cohort12', 
+  {baseUrl: `${API_URL}/cohort12`,
    headers: {
      authorization:'f45a5cb1-aef6-4bd4-96ef-172cd588336a',
      'Content-type': 'application/json'
@@ -145,7 +154,7 @@ popupProfile.addEventListener('submit', (event) => {
 
 
 });
-})();
+//})();
 
 /*
   Класс Api создан и запросы на сервер описаны, это отлично, но по организации кода 
