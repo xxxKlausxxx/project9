@@ -1,5 +1,6 @@
 {
   "name": "project9",
+  "homepage": "https://github.com/xxxKlausxxx/project9/",
   "version": "1.0.0",
   "description": "Проектная работа по JS и Webpack",
   "main": "index.js",
@@ -17,7 +18,6 @@
   "bugs": {
     "url": "https://github.com/xxxKlausxxx/project9/issues"
   },
-  "homepage": "https://github.com/xxxKlausxxx/project9#readme",
   "devDependencies": {
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.11.4",
