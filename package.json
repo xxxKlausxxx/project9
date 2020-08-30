@@ -1,5 +1,6 @@
 {
   "name": "project9",
+  "homepage": "https://github.com/xxxKlausxxx/project9/",
   "version": "1.0.0",
   "description": "Проектная работа по JS и Webpack",
   "main": "index.js",
@@ -28,7 +29,7 @@
     "css-loader": "^4.2.2",
     "cssnano": "^4.1.10",
     "file-loader": "^6.0.0",
-    "gh-pages": "^3.1.0",
+    "gh-pages": "~2.0.1",
     "html-webpack-plugin": "^4.3.0",
     "image-webpack-loader": "^6.0.0",
     "mini-css-extract-plugin": "^0.10.0",
