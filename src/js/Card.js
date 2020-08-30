@@ -1,10 +1,11 @@
-class Card {
+export default class Card {
 
     constructor(text, image, popupOpenImage) {
         this.text = text;
         this.image = image;
         this.popupOpenImage = popupOpenImage;
-        this.remove = this.remove.bind(this)
+        this.remove = this.remove.bind(this);
+        this.openImage = this.openImage.bind(this);
     }
 
     //Лайки
@@ -27,8 +28,7 @@ class Card {
 
     //Открытие изображения
 
-    openImage = (event) => { 
-        console.log(this.popupOpenImage)
+    openImage(){ 
       if(event.target.classList.contains("place-card__image")) {
       this.popupOpenImage.openImage(event)
     }}

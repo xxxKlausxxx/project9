@@ -1,4 +1,4 @@
-class CardList {
+export default class CardList {
 
     constructor(container, arr, createCardInstance, popupOpenImage) {
         this.container = container;
